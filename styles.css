@@ -41,6 +41,8 @@ body {
     transition: background-color 0.3s, transform 0.2s;
     font-weight: bold;
     text-transform: uppercase;
+    max-width: 120px; /* Set a max width for buttons */
+    flex: 1 0 auto; /* Allow buttons to grow while respecting max width */
 }
 
 .button:hover {
@@ -79,6 +81,7 @@ p {
     .banner {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .banner-image {
@@ -86,12 +89,12 @@ p {
     }
 
     .banner-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
+        justify-content: center; /* Center buttons */
+        width: 100%; /* Ensure buttons fill the banner */
     }
 
     .button {
-        width: 100%; /* Full width buttons */
-        max-width: 200px; /* Max width for buttons */
+        width: auto; /* Auto width for buttons */
+        max-width: 120px; /* Set max width for buttons */
     }
 }
