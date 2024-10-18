@@ -104,3 +104,10 @@ body {
     padding: 20px; /* Add padding */
     color: lightgray; /* Light grey color */
 }
+
+.footer-notice {
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add some padding */
+    color: lightgrey; /* Light grey color */
+    font-size: 14px; /* Font size for the notice */
+}
