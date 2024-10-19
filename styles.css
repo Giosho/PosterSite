@@ -7,7 +7,7 @@ body {
 
 .banner {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     background-color: #099bd6;
     color: white;
     padding: 20px;
@@ -22,8 +22,8 @@ body {
 
 .banner-buttons {
     display: flex;
-    justify-content: center; /* Center the buttons */
-    flex-grow: 1; /* Allow this container to take up remaining space */
+    justify-content: center;
+    flex-grow: 1;
     gap: 10px; /* Space between buttons */
 }
 
@@ -56,16 +56,56 @@ body {
     border-radius: 10px;
 }
 
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center images */
+}
+
+.gallery img {
+    margin: 5px;
+    max-width: 100%; /* Ensure image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Limit image width */
+    max-height: 80%; /* Limit image height */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* Responsive Styles for Mobile */
 @media (max-width: 600px) {
     .banner {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
         padding: 10px; /* Adjust padding for smaller screens */
-    }
-
-    .banner-image {
-        margin: 0 0 10px 0; /* Add space below image */
     }
 
     .banner-buttons {
@@ -89,13 +129,6 @@ body {
 
     .footer {
         font-size: 12px; /* Smaller font size for mobile */
-    }
-}
-
-/* Thinner sections for larger screens */
-@media (min-width: 601px) {
-    .content {
-        max-width: 500px; /* Make sections thinner for desktop */
     }
 }
 

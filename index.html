@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9г саит за постер</title>
-    <link rel="icon" href="image.png" type="image/x-icon"> <!-- Favicon -->
+    <title>9г сайт за постер</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,6 +19,8 @@
             <button class="button" onclick="scrollToSection('section5')">Стихове</button>
             <button class="button" onclick="scrollToSection('section6')">Проза</button>
             <button class="button" onclick="scrollToSection('section7')">Подаръци</button>
+            <button class="button" onclick="scrollToSection('section8')">Галерия</button>
+            <button class="button" onclick="scrollToSection('section9')">Линкове</button>
         </div>
     </div>
 
@@ -68,26 +70,59 @@
     </div>
 
     <div class="content" id="section7">
-        <h1><b>Какво да дадем?</b></h1>
-        <p>На Деня на информатиката един стандартен поздрав няма да бъде достатъчен. Задължително е да се даде на човек незабравим спомен за тази трудна професия.</p>
-        <p>Например, можете да използвате една от следните опции: Информатиката винаги е полезна за сменяеми носители: флаш устройство или микрокарта.</p>
-        <p>Не е необходимо да се дава подарък, свързан с тази професия. Алтернативно, подходящ е пакет от вкусен ароматен чай.</p>
+        <h1><b>Подаръци за Деня на информатиката</b></h1>
+        <p>Кой е подходящият подарък за Деня на информатиката? Можете да изберете всеки сувенир, свързан с компютри, например, умен часовник или ръчни инструменти за игра, мишка или клавиатура. За програмите предлагайте дискове с програми и игри.</p>
     </div>
 
-    <div class="footer">
-        <p>От Георги Владимиров Иванов IXг клас</p>
-        <p>Класен ръководител г-н Рангел Енев НАЙ-ДОБРИЯ КЛАСЕН!</p>
+    <div class="content" id="section8">
+        <h1><b>Галерия</b></h1>
+        <div class="gallery">
+            <img src="IMG1.jpg" alt="Image 1" onclick="openModal(this.src)">
+            <img src="IMG2.png" alt="Image 2" onclick="openModal(this.src)">
+            <img src="IMG3.jpg" alt="Image 3" onclick="openModal(this.src)">
+            <img src="IMG4.jpg" alt="Image 4" onclick="openModal(this.src)">
+        </div>
     </div>
 
-    <div class="footer-notice">
-        <p>© Профилирана Математическа Гимназия "Константин Величков" - град Пазарджик</p>
+    <div class="content" id="section9">
+        <h2><b>Полезни линкове</b></h2>
+        <ul>
+            <li>
+                <a href="https://computerinfobits.com/parts-of-computer-and-their-functions/" 
+                   title="Части на компютър и техните функции" 
+                   class="vc_gitem-link vc-zone-link">
+                   <img src="link1.png" alt="Части на компютър и техните функции">
+                </a>
+            </li>
+            <li>
+                <a href="https://englishan.com/parts-of-computer-names" 
+                   title="Имена на компютрите" 
+                   class="vc_gitem-link vc-zone-link">
+                   <img src="link2.png" alt="Имена на компютрите">
+                </a>
+            </li>
+            <li>
+                <a href="https://stock.adobe.com/search?k=computer+parts" 
+                   title="Adobe Stock - Компютърни части" 
+                   class="vc_gitem-link vc-zone-link">
+                   <img src="link3.png" alt="Adobe Stock - Компютърни части">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shutterstock.com/search/computer-part" 
+                   title="Shutterstock - Компютърни части" 
+                   class="vc_gitem-link vc-zone-link">
+                   <img src="link4.png" alt="Shutterstock - Компютърни части">
+                </a>
+            </li>
+        </ul>
     </div>
 
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
