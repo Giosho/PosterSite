@@ -133,9 +133,10 @@ body {
 }
 
 .footer {
-    text-align: right; /* Align text to the right */
-    padding: 20px; /* Add padding */
-    color: lightgray; /* Light grey color */
+    text-align: center; /* Центрира текста */
+    padding: 20px; /* Добавя малко отстояние */
+    background-color: #f1f1f1;
+    color: #d0d0d0; /* Може да добавиш фон, ако искаш */
 }
 
 .footer-notice {
